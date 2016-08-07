@@ -29,11 +29,11 @@ module StandardService
       @_meta ||= {}
     end
 
-    def add_condition(type, desc)
+    def add_condition(type, desc = "")
       _conditions[type.to_sym] = desc.to_s
     end
 
-    def add_meta(type, desc)
+    def add_meta(type, desc = "")
       _meta[type.to_sym] = desc.to_s
     end
   end
